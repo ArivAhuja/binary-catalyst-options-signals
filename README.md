@@ -1,1 +1,1 @@
-# Binary_Catalyst_Options_Signals
+# Binary Catalyst Options Signals
