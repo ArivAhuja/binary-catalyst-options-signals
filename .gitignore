@@ -175,3 +175,10 @@ cython_debug/
 
 # DS Store
 .DS_Store
+
+# Configuration files with sensitive data
+config/
+config.ini
+**/config.ini
+*.ini
+config/config.ini
