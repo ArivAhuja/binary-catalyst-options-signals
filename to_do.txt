@@ -1,0 +1,57 @@
+- black scholes
+- anomoly detection
+- random forest classifier on option features
+- notification signals to email in cloud pipeline
+- cloud pipeline inspects database of 
+- using open ai platform for finding and determing if catalaysts are binary and there details
+- dataframe with type of announcment, result, ticker, date as index
+- multiple models that can be chosen
+- email signal alerts
+
+
+make sure using consistent '' vs ""
+follow space between = no space not
+use if comprehension and list comprehesions
+use the apporiate clean data type
+add comments
+add python docs
+create tests
+add type checking :str and -> outputs
+add logging
+make sure naming is right
+consider object classes and where to put functions
+organize import statements
+python formatting settings for vs code
+
+
+
+def create_timestamp_intervals(start_date: datetime, end_date: datetime, 
+                              increment: int) -> pd.IntervalIndex:
+    interval_list = []
+    
+    # Convert dates to timestamps in milliseconds
+    start_ms = int(start_date.timestamp() * 1000)
+    end_ms = int(end_date.timestamp() * 1000)
+    
+    # Calculate milliseconds per increment
+    ms_per_increment = increment * 24 * 60 * 60 * 1000
+    
+    # Create intervals
+    current = start_ms
+    while current < end_ms:
+        next_point = min(current + ms_per_increment, end_ms)
+        interval_list.append(pd.Interval(current, next_point, closed='left'))
+        current = next_point
+    
+    return pd.IntervalIndex(interval_list)
+
+def calculate_days_before(agg: Agg, announcement_date: datetime) -> int:
+    agg_datetime = datetime.fromtimestamp(agg.timestamp / 1000, tz=announcement_date.tzinfo)
+    days_difference = (agg_datetime - announcement_date).days
+    
+    return days_difference
+
+
+    TODO
+    - bio catalyst dataframe pipeline
+    - models on option data
