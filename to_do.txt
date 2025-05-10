@@ -22,6 +22,8 @@ make sure naming is right
 consider object classes and where to put functions
 organize import statements
 python formatting settings for vs code
+api request limiting 
+api error handling that will throw errors based on response code
 
 
 
@@ -55,3 +57,20 @@ def calculate_days_before(agg: Agg, announcement_date: datetime) -> int:
     TODO
     - bio catalyst dataframe pipeline
     - models on option data
+
+presentation with google slides?
+animated data visualizations?
+- dataframe with square red denoting what sections mean should appear on every click
+
+paper format
+System Overview
+
+Upcoming Event Interest 1:
+Behavior: Bullish
+
+Upcoming Event Interest 2:
+Behavior: Bullish
+
+Cost
+
+Future Improvments
