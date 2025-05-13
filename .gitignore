@@ -182,3 +182,6 @@ config.ini
 **/config.ini
 *.ini
 config/config.ini
+
+# TODO
+to_do.txt
