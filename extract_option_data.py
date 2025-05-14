@@ -156,8 +156,9 @@ def fetch_contract_stock_data(contract: OptionsContract, start_date: datetime,
     """
     # Adjust end date for API query (exclusive)
     query_end_date = end_date - timedelta(days=1)
+    query_end_date = min(end_date - timedelta(days=1), datetime.now(ZoneInfo('UTC')))
     contract_agg_list = []
-    
+
     # Fetch aggregate data from Polygon API
     for a in client.list_aggs(
         ticker=contract.ticker,
@@ -170,7 +171,7 @@ def fetch_contract_stock_data(contract: OptionsContract, start_date: datetime,
         limit=50,
     ):
         contract_agg_list.append(a)
-    
+
     # Return empty DataFrame if no data found
     if not contract_agg_list:
         return pd.DataFrame()
