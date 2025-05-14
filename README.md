@@ -146,6 +146,15 @@ Additional options:
 - `--verbose`: Print detailed progress information
 - `--force`: Re-run analysis even if output files exist
 
+
+### 3. Running statistical analysis
+
+This file is still being developed but will provide analysis of dataframes created in option_analysis.
+
+### 4. Cloud Functions
+
+Directory contains files for deployable cloud functions on Google Cloud Platform. Files are still being edited to work properly.
+
 ## Example Outputs
 
 The analysis generates various visualizations and data files in the `option_analysis/` directory:

@@ -1,0 +1,20 @@
+POSITIVE OUTCOMES (n=5):
+  Average CP ratio: 5.0558
+  Average final CP ratio: nan
+  Individual events:
+    ALNY: Avg CP = 3.3501, Final CP = 1.5228
+    BBIO: Avg CP = 8.1368, Final CP = 7.8921
+    SLDB: Avg CP = 3.0479, Final CP = 1.2328
+    PEPG: Avg CP = 0.3889, Final CP = nan
+    QURE: Avg CP = 10.3551, Final CP = 7.8041
+
+NEGATIVE OUTCOMES (n=2):
+  Average CP ratio: 11.8929
+  Average final CP ratio: 10.4945
+  Individual events:
+    MIST: Avg CP = 17.5184, Final CP = 17.7992
+    ALDX: Avg CP = 6.2675, Final CP = 3.1897
+
+DIFFERENCE (Positive - Negative):
+  Average CP ratio: -6.8372
+  Positive outcomes had LOWER CP ratios on average

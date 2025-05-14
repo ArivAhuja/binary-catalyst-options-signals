@@ -61,7 +61,6 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import pickle
 import argparse
-import sys
 
 def create_implied_volatility_vector(df) -> pd.DataFrame:
     """

@@ -17,6 +17,7 @@ Output:
 """
 
 import pandas as pd
+import os
 
 # Historical biotech catalyst events with known outcomes
 # result: 1 = positive outcome, -1 = negative outcome
@@ -80,7 +81,6 @@ def main():
     df.sort_index(inplace=True)
 
     # Ensure the directory exists before saving
-    import os
     os.makedirs('biotech_catalysts', exist_ok=True)
     
     # Save DataFrame as pickle file for later use
